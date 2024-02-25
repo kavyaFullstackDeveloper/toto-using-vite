@@ -13,15 +13,15 @@ app.use(cors())
 app.use(bodyparser.json())
 
 
-let products = [
-    {id:1, name:'software engineer'},
-    {id:2, name:'data scientiest'},
-    {id:3, name:'product manager'},
-    {id: 4, name: 'Scientist'},
-    {id:5, name: 'Pilot'}
-]
+// let products = [
+//     {id:1, name:'software engineer'},
+//     {id:2, name:'data scientiest'},
+//     {id:3, name:'product manager'},
+//     {id: 4, name: 'Scientist'},
+//     {id:5, name: 'Pilot'}
+// ]
 
-app.get('/api/products', (req, res) => {
+    app.get('/api/products', (req, res) => {
     res.json(products);
     });
     
